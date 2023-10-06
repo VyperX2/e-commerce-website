@@ -1,6 +1,6 @@
 const NavLinks = [
 	{ to: "/", title: "Home" },
-	{ to: "/products", title: "Cart" },
+	{ to: "/cart", title: "Cart" },
 ];
 
 export { NavLinks };

@@ -4,11 +4,12 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 
+
 const App = () => {
 	return (
 		<>
 			<Navbar />
-			<main className=" overflow-hidden text-white">
+			<main className=" overflow-x-hidden text-white">
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/products" element={<Products />} />
