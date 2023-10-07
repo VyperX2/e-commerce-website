@@ -112,17 +112,28 @@ export const CartProvider = ({ children }) => {
 		}
 	}
 
+	function getTotalCost() {
+		let cost = 0;
+		cartProducts.forEach((item) => {
+			const data = getProductData(item.id);
+			cost += item.quantity * data.price;
+			
+		});
+    return cost
+	}
+
 	return (
 		<CartContext.Provider
 			value={{
 				productsArr,
+				cartProducts,
 				getProductQuantity,
 				addOneToCart,
 				deleteFromCart,
 				removeOneFromCart,
-        getProductData,
-        setCartProducts,
-        cartProducts
+				getProductData,
+				setCartProducts,
+				getTotalCost,
 			}}
 		>
 			{children}

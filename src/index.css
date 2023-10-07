@@ -16,7 +16,7 @@
 }
 
 .cartButtons {
-	@apply text-[#FFB800] text-sm bg-[#222222] px-2 py-1 rounded-md;
+	@apply text-[#FFB800] text-sm bg-[#222222] px-2 py-1 rounded-md hover:bg-[#FFB800] border border-[#222222] hover:text-[#222222] transition-colors hover:font-semibold;
 }
 
 ::-webkit-scrollbar {

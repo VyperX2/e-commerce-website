@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import CartContext from "../context/CartContext";
 import { motion } from "framer-motion";
 
@@ -10,10 +10,14 @@ const ProductCard = ({ img, name, price, id, index }) => {
 		deleteFromCart,
 		removeOneFromCart,
 		getProductData,
-    cartProducts
+    cartProducts,
+    getTotalCost
 	} = useContext(CartContext);
 	const currentProductQuantity = getProductQuantity(id);
 
+  useEffect(() => {
+    getTotalCost()
+  }, [cartProducts])
 
 	return (
 		<motion.div
