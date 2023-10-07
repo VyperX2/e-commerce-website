@@ -120,7 +120,9 @@ export const CartProvider = ({ children }) => {
 				addOneToCart,
 				deleteFromCart,
 				removeOneFromCart,
-        getProductData
+        getProductData,
+        setCartProducts,
+        cartProducts
 			}}
 		>
 			{children}

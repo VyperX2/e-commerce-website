@@ -22,14 +22,19 @@ const Navbar = () => {
 							isOpen ? "flex" : "hidden"
 						} flex-col px-2 py-4 bg-[#FFB800] absolute text-[#222222] font-semibold rounded-lg right-1`}
 					>
-						{NavLinks.map((link,index) => (
-							<Link key={index} to={link.to}>{link.title}</Link>
+						{NavLinks.map((link, index) => (
+							<Link key={index} to={link.to}>
+								{link.title}
+							</Link>
 						))}
+              <Link to="/products">Products</Link>
 					</ul>
 				</div>
 				<ul className=" sm:flex items-center justify-center gap-x-20 hidden ">
-					{NavLinks.map((link,index) => (
-						<Link key={index} to={link.to}>{link.title}</Link>
+					{NavLinks.map((link, index) => (
+						<Link key={index} to={link.to}>
+							{link.title}
+						</Link>
 					))}
 				</ul>
 
