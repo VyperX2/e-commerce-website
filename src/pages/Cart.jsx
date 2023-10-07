@@ -25,9 +25,10 @@ const Cart = () => {
 						))}
 					</div>
 
-					<h4 className=" text-center text-4xl mt-3 font-bold text-[#222222]">
+					<h4 className=" text-center text-4xl mt-6 font-bold text-[#222222]">
 						Total : ${totalCost}
 					</h4>
+          <button className=" cartButtons block mx-auto mt-4">Purchase Items!</button>
 				</div>
 			</section>
 		</AnimatedPages>

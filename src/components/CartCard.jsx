@@ -15,14 +15,14 @@ const CartCard = ({ quantity, id, index }) => {
 			viewport={{
 				once: true,
 			}}
-			className=" border-b-2  border-[#222222] flex sm:items-center justify-between sm:flex-row flex-col text-center text-[#222222] font-semibold  h-60 w-full "
+			className=" border-b-2 border-[#222222] flex sm:items-center justify-between sm:flex-row flex-col text-center text-[#222222] font-semibold  sm:h-60 w-full gap-y-4  "
 		>
-			<div className=" flex items-center sm:flex-row flex-col sm:w-[400px] ">
+			<div className=" flex items-center sm:flex-row flex-col sm:w-[400px] flex-1 ">
 				<img src={img} alt="" />
 				<h4>{name}</h4>
 				<h4>{price}</h4>
 			</div>
-			<div className=" flex gap-2 items-center">
+			<div className=" flex gap-1 items-center justify-center ">
 				<button onClick={() => addOneToCart(id)} className=" cartButtons">
 					+
 				</button>
@@ -38,7 +38,7 @@ const CartCard = ({ quantity, id, index }) => {
 					-
 				</button>
 			</div>
-			<div className=" flex justify-center">
+			<div className=" flex justify-center ml-2">
 				<h4>{quantity} x </h4>
 				<h4>&nbsp;${price}</h4>
 			</div>
