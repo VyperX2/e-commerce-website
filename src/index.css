@@ -15,6 +15,10 @@
 		inset 0px -4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.cartButtons {
+	@apply text-[#FFB800] text-sm bg-[#222222] px-2 py-1 rounded-md;
+}
+
 ::-webkit-scrollbar {
 	width: 7px;
 }
