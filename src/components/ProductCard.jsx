@@ -12,15 +12,16 @@ const ProductCard = ({ img, name, price, id, index }) => {
 	} = useContext(CartContext);
 	const currentProductQuantity = getProductQuantity(id);
 
-  // initial={{ x: -50, opacity: 0 }}
-  // animate={{ x: 0, opacity: 1 }}
-  // transition={{ delay: index * 0.30 }}
 	return (
 		<motion.div
-			initial={{ x: -50, y :-50, opacity: 0 }}
-			animate={{ x: 0,  y :0, opacity: 1 }}
-			transition={{ delay: index * 0.20 }}
-			className=" bg-inherit flex flex-col  mt-6 pb-4 rounded-2xl shadows   "
+			initial={{ x: -50, y: -50, opacity: 0 }}
+			// animate={{ x: 0, y: 0, opacity: 1 }}
+			transition={{ delay: index * 0.1 }}
+			whileInView={{ x: 0, y: 0, opacity: 1 }}
+      viewport={{
+        once : true
+      }}
+			className=" bg-inherit flex flex-col   pb-4 rounded-2xl shadows mt-6  "
 		>
 			<img src={img} alt="shoe" className=" h-[200px] w-[250px] object-cover" />
 			<div className="flex justify-around  ">
