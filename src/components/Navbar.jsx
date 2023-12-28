@@ -9,7 +9,7 @@ const Navbar = () => {
 	return (
 		<div className=" w-full bg-[#222222] text-white font-outfit">
 			<nav className="  container flex justify-between py-3 items-center">
-				<h4>Mateen</h4>
+				<h4>ShoeSphere</h4>
 
 				<div
 					onClick={() => setIsOpen((prev) => !prev)}
